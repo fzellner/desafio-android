@@ -55,13 +55,13 @@ Tecnologia, arquiterura e conceitos utilizados:
 A aplicação foi dívidida em 4 camadas:
 
  - app
-  - camada principal para iniciar a aplicação e navegar entre a feature ou demais features.
+  -  camada principal para iniciar a aplicação e navegar entre a feature ou demais features.
  - data
-  - camada com a responsabilidade única de buscar os dados remotamente e salvar os dados no banco local.
+  -  camada com a responsabilidade única de buscar os dados remotamente e salvar os dados no banco local.
  - common
-  - camada onde podemos compartilhar funcionalidades e resources por entre os módulos
+  -  camada onde podemos compartilhar funcionalidades e resources por entre os módulos
  - users
-  - camada responsável pela funcionalidade de listagem de usuários
+  -  camada responsável pela funcionalidade de listagem de usuários
 
 
 
