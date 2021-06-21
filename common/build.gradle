@@ -1,0 +1,9 @@
+apply from: "$rootDir/${GradleTemplates.feature}"
+
+android{
+    defaultConfig{
+        vectorDrawables.useSupportLibrary = true
+
+    }
+}
+

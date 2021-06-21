@@ -1,0 +1,29 @@
+apply from: "$rootDir/${GradleTemplates.feature}"
+def baseUrl = loadProperties()
+
+def loadProperties() {
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+    return properties.getProperty('base.url')
+
+}
+
+android {
+    defaultConfig {
+        buildConfigField "String", "BASE_URL", "$baseUrl"
+    }
+}
+
+dependencies {
+
+
+    implementation Libraries.http
+    implementation Libraries.core
+    implementation Libraries.room
+    implementation Libraries.roomKTX
+    kapt Libraries.roomAnnotation
+
+    testImplementation Libraries.testing
+    implementation project(path: ':users')
+
+}

@@ -1,0 +1,1 @@
+C:\Users\Felipe\Desktop\Nova pasta\desafio-android\buildSrc\build\classes\kotlin\main\GradleTemplates.class;C:\Users\Felipe\Desktop\Nova pasta\desafio-android\buildSrc\build\classes\kotlin\main\Libraries.class;C:\Users\Felipe\Desktop\Nova pasta\desafio-android\buildSrc\build\classes\kotlin\main\Versions.class

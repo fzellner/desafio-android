@@ -1,0 +1,13 @@
+apply from: "$rootDir/${GradleTemplates.feature}"
+
+
+dependencies{
+    implementation Libraries.ui
+    implementation Libraries.navigation
+    testImplementation Libraries.testing
+
+    debugImplementation Libraries.testFragment
+
+
+    implementation project(path: ':common')
+}
