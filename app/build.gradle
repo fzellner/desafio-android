@@ -45,7 +45,6 @@ dependencies {
     implementation Libraries.core
     implementation Libraries.koin
     implementation Libraries.navigation
-
     androidTestImplementation Libraries.testing
 
     implementation project(path: ':users')

@@ -6,8 +6,5 @@ dependencies{
     implementation Libraries.navigation
     testImplementation Libraries.testing
 
-    debugImplementation Libraries.testFragment
-
-
     implementation project(path: ':common')
 }

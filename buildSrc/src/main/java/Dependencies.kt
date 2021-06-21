@@ -23,7 +23,6 @@ object Versions {
     const val navigation_version = "2.3.0"
     const val room_version = "2.3.0"
     const val mockk = "1.9.3"
-    const val test_fragment_version = "1.3.4"
 
 
 }
@@ -49,6 +48,11 @@ object Libraries {
     private const val coroutinesAndroid =
         "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines_version}"
 
+    //room
+    private const val room = "androidx.room:room-runtime:${Versions.room_version}"
+    private const val roomKTX = "androidx.room:room-ktx:${Versions.room_version}"
+    private const val roomAnnotation = "androidx.room:room-compiler:${Versions.room_version}"
+
     //endregion
     val core = listOf(
         kotlin,
@@ -59,12 +63,6 @@ object Libraries {
         coroutinesCore,
         coroutinesAndroid
     )
-
-    //room
-    private const val room = "androidx.room:room-runtime:${Versions.room_version}"
-    private const val roomKTX = "androidx.room:room-ktx:${Versions.room_version}"
-    private const val roomAnnotation = "androidx.room:room-compiler:${Versions.room_version}"
-
 
     //http
     private const val retrofit2 = "com.squareup.retrofit2:retrofit:${Versions.retrofit_version}"
@@ -85,7 +83,6 @@ object Libraries {
         gsonConverter,
         okhttp3Interceptor)
 
-
     //dependency injection
     private const val koinCore = "org.koin:koin-core:${Versions.koin_version}"
     private const val koinAndroid = "org.koin:koin-android:${Versions.koin_version}"
@@ -93,7 +90,6 @@ object Libraries {
         "org.koin:koin-androidx-viewmodel:${Versions.koin_version}"
     private const val koinTest = "org.koin:koin-test:${Versions.koin_version}"
     val koin = listOf(koinCore, koinAndroid, koinViewModelScope, koinTest)
-
 
     //ui
     private const val appcompat = "androidx.appcompat:appcompat:${Versions.appcompat_version}"
@@ -126,10 +122,6 @@ object Libraries {
     private const val espresso = "androidx.test.espresso:espresso-core:${Versions.espresso_version}"
     private const val coreKtxTest = "androidx.test:core-ktx:${Versions.core_ktx_test_version}"
     val testing = listOf(junit, testRunner, espresso, coreKtxTest, mockk, mockito, mockitokotlin, archCoreTesting, coroutineTest)
-
-    const val testFragment = "androidx.fragment:fragment-testing:${Versions.test_fragment_version}"
-
-
 }
 
 object GradleTemplates {
